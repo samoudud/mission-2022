@@ -106,6 +106,14 @@ section {
 	width: 400px;
 }
 
+footer {
+	background: #0b0d17;
+	padding: 15px;
+	margin: 0;
+	text-align: center;
+	color: white;
+	font-style: italic;
+}
 @media only screen and (max-width: 600px) {
 	section {
 		pad: 1rem;
