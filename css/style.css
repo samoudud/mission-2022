@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+	font-family: "Poppins", sans-serif;
+}
+/* common styles */
+
+.header-color {
+	color: #ffad5a;
+}
+.common-btn {
+	padding: 12px 20px;
+	background: #ff5959;
+	border-radius: 5px;
+	color: white;
+	font-weight: 500;
+	border: none;
+}
+
+header,
+section {
+	padding: 0 10%;
+}
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.hero .box h2 {
+	font-size: 60px;
+	line-height: 80px;
+}
+
+.hero .box img {
+	width: 426px;
+	margin: 0 auto;
+}
+
+/* Missions styles */
+.missions {
+	padding-bottom: 2.5rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+}
+.missions img {
+	width: 25%;
+}
+
+.missions div {
+	border-radius: 26px;
+	padding: 32px;
+}
+.mission-1 {
+	background: rgba(79, 157, 166, 0.1);
+}
+.mission-2 {
+	background: rgba(255, 89, 89, 0.1);
+}
+.mission-3 {
+	background: #fff4d6;
+}
+
+/* Develop container */
+.develop-container {
+	background: url(../images/shapes/shape-1.png);
+	background-repeat: no-repeat;
+	background-size: 20%;
+	background-position: left;
+	margin: 30px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.know-container {
+	background: url(../images/shapes/shape-1.png);
+	background-repeat: no-repeat;
+	background-size: 20%;
+	background-position: right bottom;
+	margin: 30px 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.know-container .img {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+
+.boxes {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+}
+
+.img-box {
+	background: url("../images/shapes/shape-3.png");
+	background-repeat: no-repeat;
+	background-size: 20%;
+	background-position: left top;
+}
+
+.img-box img {
+	width: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+	section {
+		pad: 1rem;
+	}
+	.hero {
+		flex-direction: column;
+	}
+	.missions,
+	.boxes {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.develop-container,
+	.know-container {
+		background: none;
+		flex-direction: column;
+	}
+}
